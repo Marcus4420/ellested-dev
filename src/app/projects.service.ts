@@ -83,7 +83,7 @@ export class ProjectsService {
       name: "DroneDudes",
       image_url: 'assets/projects/dronedudes.png',
       description: "A software system for controlling an assembly system simulation, supporting drone production and multiple robot scalability.",
-      status: "In Progress",
+      status: "Completed",
       context: "Academic",
       techs: ['Java Spring Boot', 'Angular', 'Tailwind', 'PostgreSql'],
       github_url: 'https://github.com/DroneDudes/SEMPRO4',
