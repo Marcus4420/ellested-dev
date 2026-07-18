@@ -49,17 +49,19 @@ export const timeline: TimelineEntry[] = [
   },
   {
     dateRange: 'Aug 2024 – Jul 2026',
-    title: { en: 'Student Platform Engineer', da: 'Studerende Platform-ingeniør' },
+    title: { en: 'Platform Engineer', da: 'Platform-ingeniør' },
     org: 'HR-ON',
     category: 'work',
     iconSrc: hrOnIcon,
     bullets: {
       en: [
+        'Started as a student employee alongside my degree, transitioning to a full-time role in January 2026.',
         'Improved API performance, reducing response time from 28s to 1s, allowing sync in minutes instead of a day.',
         'Refactored and scaled the email service to reliably deliver 50,000+ emails and SMS daily.',
         'Implemented a new signature service, boosting compliance and reducing company costs by 50%.',
       ],
       da: [
+        'Startede som studentermedhjælper ved siden af studiet og overgik til en fuldtidsstilling i januar 2026.',
         'Forbedrede API-performance og reducerede svartiden fra 28 sekunder til 1 sekund, så synkronisering nu tager minutter i stedet for en hel dag.',
         'Refaktorerede og skalerede email-servicen, så den pålideligt leverer 50.000+ emails og sms\'er dagligt.',
         'Implementerede en ny signatur-service, der styrkede compliance og reducerede virksomhedens omkostninger med 50%.',
