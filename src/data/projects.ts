@@ -13,11 +13,11 @@ export const projects: Project[] = [
   {
     name: 'preflight',
     description: {
-      en: 'A Go CLI and GitHub Action that starts Floci\'s local AWS emulator in CI, points Terraform at it, and tears it down after, so infrastructure changes get tested without touching real cloud or burning credentials.',
-      da: 'Et Go CLI og GitHub Action, der starter Flocis lokale AWS-emulator i CI, peger Terraform mod den og lukker den ned bagefter, så infrastrukturændringer bliver testet uden at røre den rigtige cloud eller bruge kreditter.',
+      en: 'A local tool that spins up Floci\'s AWS emulator, runs your Terraform plan against it, and renders an interactive graph of what would be created, changed, or destroyed, so you can see the blast radius before touching real infrastructure.',
+      da: 'Et lokalt værktøj, der starter Flocis AWS-emulator, kører din Terraform-plan mod den og viser en interaktiv graf over, hvad der ville blive oprettet, ændret eller slettet, så du kan se konsekvenserne før du rører den rigtige infrastruktur.',
     },
     status: 'Planned',
     context: 'Personal',
-    techs: ['Go', 'Terraform', 'GitHub Actions', 'Floci'],
+    techs: ['TypeScript', 'React', 'Terraform', 'Floci'],
   },
 ]
