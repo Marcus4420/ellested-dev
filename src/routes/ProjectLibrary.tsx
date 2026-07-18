@@ -27,9 +27,11 @@ export default function ProjectLibrary() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-16">
       <SectionHeading eyebrow={t.projects.eyebrow} title={t.projects.title} />
-      <div className="mb-8 max-w-sm">
-        <ProjectSearch value={query} onChange={setQuery} />
-      </div>
+      {projects.length > 1 && (
+        <div className="mb-8 max-w-sm">
+          <ProjectSearch value={query} onChange={setQuery} />
+        </div>
+      )}
       {filtered.length === 0 ? (
         <p className="text-sm text-[var(--color-fg-muted)]">{t.projects.noMatch(query)}</p>
       ) : (

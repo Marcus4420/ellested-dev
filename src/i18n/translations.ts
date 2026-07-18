@@ -33,6 +33,7 @@ export const translations = {
       github: 'GitHub',
       live: 'Live',
       status: {
+        Planned: 'Planned',
         'In Progress': 'In Progress',
         Completed: 'Completed',
         'On Hold': 'On Hold',
@@ -105,6 +106,7 @@ export const translations = {
       github: 'GitHub',
       live: 'Live',
       status: {
+        Planned: 'Planlagt',
         'In Progress': 'I gang',
         Completed: 'Færdig',
         'On Hold': 'På pause',

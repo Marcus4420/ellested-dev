@@ -2,6 +2,7 @@ import type { Project } from '../../data/projects'
 import { useLocale } from '../../hooks/useLocale'
 
 const statusStyles: Record<Project['status'], string> = {
+  Planned: 'bg-[var(--color-fg-muted)]/10 text-[var(--color-fg-muted)]',
   'In Progress': 'bg-amber-500/10 text-amber-600 dark:text-amber-400',
   Completed: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400',
   'On Hold': 'bg-[var(--color-fg-muted)]/10 text-[var(--color-fg-muted)]',
@@ -12,7 +13,15 @@ export default function ProjectCard({ project }: { project: Project }) {
 
   return (
     <article className="flex flex-col overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-raised)]">
-      <img src={project.imageUrl} alt="" className="h-36 w-full object-cover" aria-hidden="true" />
+      {project.imageUrl ? (
+        <img src={project.imageUrl} alt="" className="h-36 w-full object-cover" aria-hidden="true" />
+      ) : (
+        <div className="flex h-36 w-full items-center justify-center border-b border-dashed border-[var(--color-border)]">
+          <span className="font-display text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-fg-muted)]">
+            {t.projects.status.Planned}
+          </span>
+        </div>
+      )}
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex items-start justify-between gap-2">
           <h3 className="font-display text-base font-semibold">{project.name}</h3>
