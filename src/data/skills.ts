@@ -1,6 +1,5 @@
 import goIcon from '../assets/skills/go.svg'
 import typescriptIcon from '../assets/skills/typescript.svg'
-import rustIcon from '../assets/skills/rust.svg'
 import javaIcon from '../assets/skills/java.svg'
 import kubernetesIcon from '../assets/skills/kubernets.svg'
 import dockerIcon from '../assets/skills/docker.svg'
@@ -24,10 +23,9 @@ export const skillGroups: SkillGroup[] = [
   {
     key: 'languages',
     skills: [
-      { name: 'Go', icon: goIcon },
       { name: 'TypeScript', icon: typescriptIcon },
-      { name: 'Rust', icon: rustIcon },
-      { name: 'Java', icon: javaIcon },
+      { name: 'Java', icon: javaIcon }, '
+      { name: 'Go', icon: goIcon }, '
     ],
   },
   {
