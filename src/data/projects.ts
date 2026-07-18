@@ -11,7 +11,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: 'preflight',
+    name: 'Preflight',
     imageUrl: '/projects/preflight.png',
     description: {
       en: 'A tool that spins up Floci\'s AWS emulator, runs your Terraform plan against it, and renders an interactive graph of what would be created, changed, or destroyed, so you can see the blast radius before touching real infrastructure. Runs via Docker Compose or natively.',
