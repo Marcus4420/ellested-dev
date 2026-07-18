@@ -6,6 +6,7 @@ import kubernetesIcon from '../assets/skills/kubernets.svg'
 import dockerIcon from '../assets/skills/docker.svg'
 import terraformIcon from '../assets/skills/terraform.svg'
 import linuxIcon from '../assets/skills/linux.svg'
+import awsIcon from '../assets/skills/aws.svg'
 import gitIcon from '../assets/skills/git.svg'
 import reactIcon from '../assets/skills/react.svg'
 
@@ -35,6 +36,7 @@ export const skillGroups: SkillGroup[] = [
       { name: 'Kubernetes', icon: kubernetesIcon },
       { name: 'Docker', icon: dockerIcon },
       { name: 'Terraform', icon: terraformIcon },
+      { name: 'AWS', icon: awsIcon },
       { name: 'Linux', icon: linuxIcon },
     ],
   },

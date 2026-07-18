@@ -9,7 +9,7 @@ interface TimelineItemProps {
 
 export default function TimelineItem({ entry, isLast }: TimelineItemProps) {
   const { ref, inView } = useInView<HTMLLIElement>()
-  const { locale } = useLocale()
+  const { locale, t } = useLocale()
 
   return (
     <li
@@ -43,8 +43,15 @@ export default function TimelineItem({ entry, isLast }: TimelineItemProps) {
         <time className="font-display text-xs font-medium uppercase tracking-wide text-[var(--color-fg-muted)]">
           {entry.dateRange}
         </time>
-        <h3 className="mt-1 text-base font-semibold">
-          {entry.title[locale]} <span className="font-normal text-[var(--color-fg-muted)]">· {entry.org}</span>
+        <h3 className="mt-1 flex flex-wrap items-center gap-2 text-base font-semibold">
+          <span>
+            {entry.title[locale]} <span className="font-normal text-[var(--color-fg-muted)]">· {entry.org}</span>
+          </span>
+          {entry.current && (
+            <span className="rounded-full bg-amber-500/10 px-2.5 py-0.5 text-xs font-medium text-amber-600 dark:text-amber-400">
+              {t.history.ongoing}
+            </span>
+          )}
         </h3>
         <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-[var(--color-fg-muted)]">
           {entry.bullets[locale].map((bullet) => (

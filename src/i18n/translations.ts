@@ -25,6 +25,12 @@ export const translations = {
       eyebrow: 'Background',
       title: 'About me',
     },
+    history: {
+      work: 'Experience',
+      education: 'Education',
+      volunteer: 'Volunteering',
+      ongoing: 'Ongoing',
+    },
     projects: {
       eyebrow: 'Work',
       title: 'Project library',
@@ -49,7 +55,6 @@ export const translations = {
       backToSite: '← Back to site',
       print: 'Print / Save as PDF',
       subtitle: 'Platform Engineer · Odense, Denmark',
-      experience: 'Experience',
       skills: 'Skills',
     },
     palette: {
@@ -98,6 +103,12 @@ export const translations = {
       eyebrow: 'Baggrund',
       title: 'Om mig',
     },
+    history: {
+      work: 'Erfaring',
+      education: 'Uddannelse',
+      volunteer: 'Frivilligt arbejde',
+      ongoing: 'I gang',
+    },
     projects: {
       eyebrow: 'Arbejde',
       title: 'Projektbibliotek',
@@ -122,7 +133,6 @@ export const translations = {
       backToSite: '← Tilbage til siden',
       print: 'Print / Gem som PDF',
       subtitle: 'Platform-ingeniør · Odense, Danmark',
-      experience: 'Erfaring',
       skills: 'Kompetencer',
     },
     palette: {

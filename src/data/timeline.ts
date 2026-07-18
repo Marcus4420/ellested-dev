@@ -12,10 +12,14 @@ interface Localized {
   da: string
 }
 
+export type TimelineCategory = 'work' | 'education' | 'volunteer'
+
 export interface TimelineEntry {
   dateRange: string
   title: Localized
   org: string
+  category: TimelineCategory
+  current?: boolean
   bullets: { en: string[]; da: string[] }
   iconSrc?: string
   iconLabel?: string
@@ -28,6 +32,8 @@ export const timeline: TimelineEntry[] = [
     dateRange: 'Aug 2026 – Present',
     title: { en: 'Platform Engineer', da: 'Platform-ingeniør' },
     org: 'Energinet',
+    category: 'work',
+    current: true,
     iconSrc: energinetLogo,
     iconFit: 'contain',
     bullets: {
@@ -45,6 +51,7 @@ export const timeline: TimelineEntry[] = [
     dateRange: 'Aug 2024 – Jul 2026',
     title: { en: 'Student Platform Engineer', da: 'Studerende Platform-ingeniør' },
     org: 'HR-ON',
+    category: 'work',
     iconSrc: hrOnIcon,
     bullets: {
       en: [
@@ -63,6 +70,8 @@ export const timeline: TimelineEntry[] = [
     dateRange: 'Oct 2023 – Ongoing',
     title: { en: 'Volunteer', da: 'Frivillig' },
     org: 'Foreningen Cancerramte Børn',
+    category: 'volunteer',
+    current: true,
     iconSrc: fcbIcon,
     bullets: {
       en: [
@@ -81,6 +90,7 @@ export const timeline: TimelineEntry[] = [
     dateRange: 'Sep 2023 – Dec 2025',
     title: { en: 'Volunteer', da: 'Frivillig' },
     org: 'Dorm Board',
+    category: 'volunteer',
     iconSrc: dormIcon,
     bullets: {
       en: [
@@ -99,6 +109,7 @@ export const timeline: TimelineEntry[] = [
     dateRange: 'Mar 2023',
     title: { en: 'Leadership course', da: 'Lederkursus' },
     org: 'IDA',
+    category: 'education',
     iconSrc: idaIcon,
     bullets: {
       en: [
@@ -115,9 +126,10 @@ export const timeline: TimelineEntry[] = [
     link: { label: { en: 'Diploma', da: 'Diplom' }, href: '/LeaderDiploma.pdf' },
   },
   {
-    dateRange: 'Sep 2022 – 2026',
+    dateRange: 'Sep 2022 – Jan 2026',
     title: { en: 'Engineering degree in Software Technology', da: 'Ingeniøruddannelse i Softwareteknologi' },
     org: 'SDU',
+    category: 'education',
     iconSrc: sduIcon,
     bullets: {
       en: [
@@ -138,6 +150,7 @@ export const timeline: TimelineEntry[] = [
     dateRange: 'Aug 2018 – Jun 2021',
     title: { en: 'Higher Technical Exam (HTX)', da: 'Højere Teknisk Eksamen (HTX)' },
     org: 'HTX',
+    category: 'education',
     iconSrc: htxIcon,
     bullets: {
       en: [
@@ -160,6 +173,7 @@ export const timeline: TimelineEntry[] = [
     dateRange: 'Jun 2018 – Jul 2022',
     title: { en: 'NonFood Floor Manager', da: 'NonFood Salgsleder' },
     org: 'Føtex Holbæk',
+    category: 'work',
     iconSrc: fotexIcon,
     bullets: {
       en: [
