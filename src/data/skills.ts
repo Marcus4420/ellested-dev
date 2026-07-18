@@ -24,8 +24,8 @@ export const skillGroups: SkillGroup[] = [
     key: 'languages',
     skills: [
       { name: 'TypeScript', icon: typescriptIcon },
-      { name: 'Java', icon: javaIcon }, '
-      { name: 'Go', icon: goIcon }, '
+      { name: 'Java', icon: javaIcon },
+      { name: 'Go', icon: goIcon },
     ],
   },
   {
