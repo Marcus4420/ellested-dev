@@ -1,0 +1,148 @@
+export const translations = {
+  en: {
+    nav: {
+      home: 'Home',
+      projects: 'Projects',
+      resume: 'Resume',
+      search: 'Search',
+    },
+    hero: {
+      eyebrow: 'Platform Engineer',
+      bio: 'Platform Engineer at Energinet. I run the Kubernetes infrastructure behind Denmark\'s power and gas grid, mostly Go and Terraform, plus whatever keeps things from breaking at 3am.',
+      github: 'GitHub',
+      linkedin: 'LinkedIn',
+    },
+    skills: {
+      eyebrow: 'Toolbox',
+      title: 'Skills',
+      groups: {
+        languages: 'Languages',
+        platform: 'Platform & Infra',
+        tools: 'Tools',
+      },
+    },
+    timeline: {
+      eyebrow: 'Background',
+      title: 'About me',
+    },
+    projects: {
+      eyebrow: 'Work',
+      title: 'Project library',
+      searchPlaceholder: 'Search projects by name, description, or tech...',
+      noMatch: (query: string) => `No projects match "${query}".`,
+      github: 'GitHub',
+      live: 'Live',
+      status: {
+        'In Progress': 'In Progress',
+        Completed: 'Completed',
+        'On Hold': 'On Hold',
+      },
+    },
+    notFound: {
+      eyebrow: '404',
+      title: 'Route not found',
+      message: "No handler matched this path. Whatever you were looking for isn't deployed here.",
+      backHome: 'Back home',
+    },
+    resume: {
+      backToSite: '← Back to site',
+      print: 'Print / Save as PDF',
+      subtitle: 'Platform Engineer · Odense, Denmark',
+      experience: 'Experience',
+      skills: 'Skills',
+    },
+    palette: {
+      placeholder: 'Type a command or search...',
+      noResults: 'No results found.',
+      navigate: 'Navigate',
+      links: 'Links',
+      preferences: 'Preferences',
+      home: 'Home',
+      projects: 'Projects',
+      resume: 'Resume',
+      openGithub: 'Open GitHub',
+      openLinkedin: 'Open LinkedIn',
+      emailMe: 'Email me',
+      toggleTheme: 'Toggle light / dark theme',
+    },
+    footer: {
+      email: 'Email',
+      copied: 'Copied!',
+      builtOn: (date: string) => `· built ${date}`,
+    },
+  },
+  da: {
+    nav: {
+      home: 'Hjem',
+      projects: 'Projekter',
+      resume: 'CV',
+      search: 'Søg',
+    },
+    hero: {
+      eyebrow: 'Platform-ingeniør',
+      bio: 'Platform-ingeniør hos Energinet. Jeg står for Kubernetes-infrastrukturen bag det danske el- og gasnet, mest Go og Terraform, plus hvad der ellers skal til for at holde det kørende.',
+      github: 'GitHub',
+      linkedin: 'LinkedIn',
+    },
+    skills: {
+      eyebrow: 'Værktøjskasse',
+      title: 'Kompetencer',
+      groups: {
+        languages: 'Sprog',
+        platform: 'Platform & infrastruktur',
+        tools: 'Værktøjer',
+      },
+    },
+    timeline: {
+      eyebrow: 'Baggrund',
+      title: 'Om mig',
+    },
+    projects: {
+      eyebrow: 'Arbejde',
+      title: 'Projektbibliotek',
+      searchPlaceholder: 'Søg i projekter efter navn, beskrivelse eller teknologi...',
+      noMatch: (query: string) => `Ingen projekter matcher "${query}".`,
+      github: 'GitHub',
+      live: 'Live',
+      status: {
+        'In Progress': 'I gang',
+        Completed: 'Færdig',
+        'On Hold': 'På pause',
+      },
+    },
+    notFound: {
+      eyebrow: '404',
+      title: 'Ruten blev ikke fundet',
+      message: 'Ingen handler matchede denne sti. Det du ledte efter er ikke deployet her.',
+      backHome: 'Tilbage til forsiden',
+    },
+    resume: {
+      backToSite: '← Tilbage til siden',
+      print: 'Print / Gem som PDF',
+      subtitle: 'Platform-ingeniør · Odense, Danmark',
+      experience: 'Erfaring',
+      skills: 'Kompetencer',
+    },
+    palette: {
+      placeholder: 'Skriv en kommando eller søg...',
+      noResults: 'Ingen resultater fundet.',
+      navigate: 'Naviger',
+      links: 'Links',
+      preferences: 'Indstillinger',
+      home: 'Hjem',
+      projects: 'Projekter',
+      resume: 'CV',
+      openGithub: 'Åbn GitHub',
+      openLinkedin: 'Åbn LinkedIn',
+      emailMe: 'Send mig en email',
+      toggleTheme: 'Skift lyst/mørkt tema',
+    },
+    footer: {
+      email: 'Email',
+      copied: 'Kopieret!',
+      builtOn: (date: string) => `· bygget ${date}`,
+    },
+  },
+}
+
+export type Locale = keyof typeof translations
