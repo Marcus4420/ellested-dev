@@ -1,27 +1,34 @@
-# MyPortfolio
+# ellested.dev
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+Personal portfolio site. React + TypeScript + Tailwind CSS, built with Vite.
 
-## Development server
+## Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+npm install
+npm run dev
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+npm run build
+```
 
-## Running unit tests
+Outputs a static site to `dist/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Deployment
 
-## Running end-to-end tests
+Hosted on Cloudflare Pages, connected directly to this repo. After this rewrite, the Pages project's
+build settings need updating (one-time, in the Cloudflare dashboard):
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Build command:** `npm run build`
+- **Build output directory:** `dist`
 
-## Further help
+`public/_redirects` handles SPA client-side routing (so refreshing `/projects` doesn't 404).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Structure
+
+- `src/data/` — content (projects, skills, timeline) as typed data, separate from presentation
+- `src/components/` — layout, home sections, and project-library components
+- `src/routes/` — `Home` (`/`) and `ProjectLibrary` (`/projects`)
